@@ -32,5 +32,54 @@ namespace StepOne
             };
             richTextBox1.Text= genSetting.Run();
         }
+
+        private void richTextBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button==MouseButtons.Right)
+            {
+                richTextBox1.ContextMenuStrip = contextMenuStrip;
+            }
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length>0)
+            {
+                richTextBox1.Copy();
+            }
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length > 0)
+            {
+                richTextBox1.Paste();
+            }
+        }
+
+        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length > 0)
+            {
+                richTextBox1.SelectAll();
+            }
+        }
+
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length>0)
+            {
+                richTextBox1.SelectAll();
+                richTextBox1.Copy();
+            }
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length>0)
+            {
+                richTextBox1.Clear();
+            }
+        }
     }
 }

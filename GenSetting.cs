@@ -74,12 +74,18 @@ namespace StepOne
             }
             if (!NumbersCheck && !CapRuLattersCheck && !RuLattersCheck && !SpecialSymbolsCheck && !CapEngLettersCheck && !engLetterCheck)
             {
-                _randomstring = "?????";
+                _randomstring = "Выберите тип пароля!!!";
             }
+
+                
             return _randomstring;
         }
         public string GeneratorChar()
         {
+            if (true)
+            {
+
+            }
             for (int i = 0; i < lengthPasword; i++)
             {
                 _result += _randomstring[random.Next(0, _randomstring.Length)];
