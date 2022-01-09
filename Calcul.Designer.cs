@@ -1,6 +1,6 @@
 ﻿namespace StepOne
 {
-    partial class Form1
+    partial class Calcul
     {
         /// <summary>
         /// Обязательная переменная конструктора.

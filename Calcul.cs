@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StepOne
 {
-    public partial class Form1 : Form
+    public partial class Calcul : Form
     {
-        public Form1()
+        public Calcul()
         {
             InitializeComponent();
         }
